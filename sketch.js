@@ -13,15 +13,16 @@ function preload() {
 function setup() {
   createCanvas(1600, 900);
 
-  earth = createSprite(100, 450, 100, 100);
+  earth = createSprite(0, 450, 100, 100);
   earth.addImage(earthIMG)
+  earth.scale = 3;
 
   exhaust = createSprite(250, 450, 10, 10)
   exhaust.scale = 2
   exhaust.addAnimation("exhaustANIM", exhaustANIM)
   exhaust.visible = false;
 
-  spaceShip = createSprite(350, 450, 100, 200);
+  spaceShip = createSprite(480, 450, 100, 200);
   spaceShip.addImage(ssIMG);
   spaceShip.scale = 2.5
 
